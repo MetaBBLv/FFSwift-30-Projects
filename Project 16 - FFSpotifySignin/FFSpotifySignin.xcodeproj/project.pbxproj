@@ -1,0 +1,377 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB5346CC22D42B3200786374 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5346CB22D42B3200786374 /* AppDelegate.swift */; };
+		CB5346D122D42B3200786374 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5346CF22D42B3200786374 /* Main.storyboard */; };
+		CB5346D322D42B3500786374 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB5346D222D42B3500786374 /* Assets.xcassets */; };
+		CB5346D622D42B3500786374 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5346D422D42B3500786374 /* LaunchScreen.storyboard */; };
+		CB5346E222D42BB700786374 /* FFMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5346E122D42BB700786374 /* FFMasterViewController.swift */; };
+		CB5346E422D42BFC00786374 /* moments.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CB5346E322D42BFB00786374 /* moments.mp4 */; };
+		CB5346E622D4324B00786374 /* FFVideoCutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5346E522D4324B00786374 /* FFVideoCutter.swift */; };
+		CB5346E822D4326D00786374 /* FFVideoSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5346E722D4326D00786374 /* FFVideoSplashViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CB5346C822D42B3200786374 /* FFSpotifySignin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FFSpotifySignin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB5346CB22D42B3200786374 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB5346D022D42B3200786374 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB5346D222D42B3500786374 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB5346D522D42B3500786374 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB5346D722D42B3500786374 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB5346E122D42BB700786374 /* FFMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFMasterViewController.swift; sourceTree = "<group>"; };
+		CB5346E322D42BFB00786374 /* moments.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = moments.mp4; sourceTree = "<group>"; };
+		CB5346E522D4324B00786374 /* FFVideoCutter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFVideoCutter.swift; sourceTree = "<group>"; };
+		CB5346E722D4326D00786374 /* FFVideoSplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFVideoSplashViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB5346C522D42B3200786374 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB5346BF22D42B3200786374 = {
+			isa = PBXGroup;
+			children = (
+				CB5346E022D42B6F00786374 /* Libary */,
+				CB5346CA22D42B3200786374 /* FFSpotifySignin */,
+				CB5346C922D42B3200786374 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB5346C922D42B3200786374 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB5346C822D42B3200786374 /* FFSpotifySignin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB5346CA22D42B3200786374 /* FFSpotifySignin */ = {
+			isa = PBXGroup;
+			children = (
+				CB5346CB22D42B3200786374 /* AppDelegate.swift */,
+				CB5346DF22D42B6400786374 /* ViewController */,
+				CB5346DE22D42B5100786374 /* Files */,
+				CB5346CF22D42B3200786374 /* Main.storyboard */,
+				CB5346D222D42B3500786374 /* Assets.xcassets */,
+				CB5346D422D42B3500786374 /* LaunchScreen.storyboard */,
+				CB5346D722D42B3500786374 /* Info.plist */,
+			);
+			path = FFSpotifySignin;
+			sourceTree = "<group>";
+		};
+		CB5346DE22D42B5100786374 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB5346E322D42BFB00786374 /* moments.mp4 */,
+			);
+			name = Files;
+			sourceTree = "<group>";
+		};
+		CB5346DF22D42B6400786374 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CB5346E122D42BB700786374 /* FFMasterViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		CB5346E022D42B6F00786374 /* Libary */ = {
+			isa = PBXGroup;
+			children = (
+				CB5346E522D4324B00786374 /* FFVideoCutter.swift */,
+				CB5346E722D4326D00786374 /* FFVideoSplashViewController.swift */,
+			);
+			path = Libary;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB5346C722D42B3200786374 /* FFSpotifySignin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB5346DA22D42B3500786374 /* Build configuration list for PBXNativeTarget "FFSpotifySignin" */;
+			buildPhases = (
+				CB5346C422D42B3200786374 /* Sources */,
+				CB5346C522D42B3200786374 /* Frameworks */,
+				CB5346C622D42B3200786374 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FFSpotifySignin;
+			productName = FFSpotifySignin;
+			productReference = CB5346C822D42B3200786374 /* FFSpotifySignin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB5346C022D42B3200786374 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = MissZhou;
+				TargetAttributes = {
+					CB5346C722D42B3200786374 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = CB5346C322D42B3200786374 /* Build configuration list for PBXProject "FFSpotifySignin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB5346BF22D42B3200786374;
+			productRefGroup = CB5346C922D42B3200786374 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB5346C722D42B3200786374 /* FFSpotifySignin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB5346C622D42B3200786374 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB5346D622D42B3500786374 /* LaunchScreen.storyboard in Resources */,
+				CB5346E422D42BFC00786374 /* moments.mp4 in Resources */,
+				CB5346D322D42B3500786374 /* Assets.xcassets in Resources */,
+				CB5346D122D42B3200786374 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB5346C422D42B3200786374 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB5346E222D42BB700786374 /* FFMasterViewController.swift in Sources */,
+				CB5346E622D4324B00786374 /* FFVideoCutter.swift in Sources */,
+				CB5346CC22D42B3200786374 /* AppDelegate.swift in Sources */,
+				CB5346E822D4326D00786374 /* FFVideoSplashViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CB5346CF22D42B3200786374 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB5346D022D42B3200786374 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB5346D422D42B3500786374 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB5346D522D42B3500786374 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB5346D822D42B3500786374 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB5346D922D42B3500786374 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB5346DB22D42B3500786374 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ZP4Q8T234;
+				INFOPLIST_FILE = FFSpotifySignin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MissZhou.FFSpotifySignin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB5346DC22D42B3500786374 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ZP4Q8T234;
+				INFOPLIST_FILE = FFSpotifySignin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MissZhou.FFSpotifySignin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB5346C322D42B3200786374 /* Build configuration list for PBXProject "FFSpotifySignin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB5346D822D42B3500786374 /* Debug */,
+				CB5346D922D42B3500786374 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB5346DA22D42B3500786374 /* Build configuration list for PBXNativeTarget "FFSpotifySignin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB5346DB22D42B3500786374 /* Debug */,
+				CB5346DC22D42B3500786374 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB5346C022D42B3200786374 /* Project object */;
+}

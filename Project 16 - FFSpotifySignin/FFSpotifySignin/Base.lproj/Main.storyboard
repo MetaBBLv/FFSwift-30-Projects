@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Master View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FFMasterViewController" customModule="FFSpotifySignin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login-secondary-logo" translatesAutoresizingMaskIntoConstraints="NO" id="t1q-IR-c5N">
+                                <rect key="frame" x="78.666666666666686" y="150" width="218" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="aP2-00-USi"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6R-0w-XPw">
+                                <rect key="frame" x="0.0" y="732" width="187.66666666666666" height="80"/>
+                                <color key="backgroundColor" red="0.27058823529411763" green="0.27058823529411763" blue="0.27058823529411763" alpha="0.80385638297872342" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="9Cy-n9-cYa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBoldItalic" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="LOG IN">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ta-8R-H1V">
+                                <rect key="frame" x="187.66666666666663" y="732" width="187.33333333333337" height="80"/>
+                                <color key="backgroundColor" red="0.090196078431372548" green="0.68235294117647061" blue="0.011764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBoldItalic" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="SIGN UP">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="i6R-0w-XPw" secondAttribute="bottom" id="1kl-0K-0hZ"/>
+                            <constraint firstItem="1ta-8R-H1V" firstAttribute="height" secondItem="i6R-0w-XPw" secondAttribute="height" id="2uq-8k-bYE"/>
+                            <constraint firstItem="i6R-0w-XPw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AFr-qU-hnm"/>
+                            <constraint firstItem="1ta-8R-H1V" firstAttribute="width" secondItem="i6R-0w-XPw" secondAttribute="width" id="MfC-Ei-VCM"/>
+                            <constraint firstItem="1ta-8R-H1V" firstAttribute="leading" secondItem="i6R-0w-XPw" secondAttribute="trailing" id="Nkf-sv-Ixv"/>
+                            <constraint firstItem="t1q-IR-c5N" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="150" id="f2W-Cj-tlh"/>
+                            <constraint firstAttribute="trailing" secondItem="1ta-8R-H1V" secondAttribute="trailing" id="kYj-NQ-Sub"/>
+                            <constraint firstAttribute="bottom" secondItem="1ta-8R-H1V" secondAttribute="bottom" id="nQE-Uq-4No"/>
+                            <constraint firstItem="t1q-IR-c5N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rgW-ov-jfh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="login-secondary-logo" width="218" height="66"/>
+    </resources>
+</document>
