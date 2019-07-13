@@ -1,0 +1,61 @@
+//
+//  PhotoStreamViewController.swift
+//  FFPinterset
+//
+//  Created by zhou on 2019/7/12.
+//  Copyright © 2019 MissZhou. All rights reserved.
+//
+
+import UIKit
+import AVFoundation
+
+class PhotoStreamViewController: UICollectionViewController {
+    
+    var photos = FFPhoto.allPhotos()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        if let layout = collectionView?.collectionViewLayout as? FFPinterestLayout {
+            layout.delegate = self
+        }
+        
+        view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "Pattern"))
+        collectionView!.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        
+        if #available(iOS 11.0, *) {
+            collectionView?.contentInsetAdjustmentBehavior = .always
+        }
+    }
+}
+
+extension PhotoStreamViewController {
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return photos.count
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AnnotatedPhotoCell", for: indexPath) as! AnnotatedPhotoCell
+        cell.photo = photos[(indexPath as NSIndexPath).item]
+        return cell
+    }
+}
+
+extension PhotoStreamViewController: PinterestLayoutDelegate {
+    func collectionView(_ collectionView: UICollectionView, heightForPhotoAtIndexPath indexPath: IndexPath, withWidth width: CGFloat) -> CGFloat {
+        let photo = photos[(indexPath as NSIndexPath).item]
+        let boundingRect = CGRect(x: 0, y: 0, width: width, height: CGFloat(MAXFLOAT))
+        let rect = AVMakeRect(aspectRatio: photo.image.size, insideRect: boundingRect)
+        return rect.size.height
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, heightForAnnotationAtIndexPath indexPath: IndexPath, withWidth width: CGFloat) -> CGFloat {
+        let annotationPadding = CGFloat(4)
+        let annotationHeaderHeight = CGFloat(17)
+        let photo = photos[(indexPath as NSIndexPath).item]
+        let font = UIFont(name: "AvenirNext-Regular", size: 10)!
+        let commentHeight = photo.heightForComment(font, width: width)
+        let height = annotationPadding + annotationHeaderHeight + commentHeight + annotationPadding
+        return height
+    }
+}
