@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FFBrowser" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" allowsBackForwardNavigationGestures="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BQc-sL-9hJ">
+                                <rect key="frame" x="0.0" y="93" width="414" height="710"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QoC-Oa-QjU">
+                                <rect key="frame" x="0.0" y="803" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Byr-Z2-HTi"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Back" id="ste-yH-Z08">
+                                        <connections>
+                                            <action selector="backButton:" destination="BYZ-38-t0r" id="Vgc-eI-bOe"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="HPN-2z-1gI"/>
+                                    <barButtonItem title="Forward" id="WCb-5T-2BP">
+                                        <connections>
+                                            <action selector="forward:" destination="BYZ-38-t0r" id="IO1-yA-qHG"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="JF8-Qb-Vqv"/>
+                                    <barButtonItem title="Reload" id="xXy-pT-7Vf">
+                                        <connections>
+                                            <action selector="reload:" destination="BYZ-38-t0r" id="T6q-Uo-wch"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EmV-Wc-mNq">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="https://" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SmX-u5-x6L">
+                                        <rect key="frame" x="50" y="2" width="314" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="SmX-u5-x6L" firstAttribute="leading" secondItem="EmV-Wc-mNq" secondAttribute="leading" constant="50" id="3G7-Vz-crV"/>
+                                    <constraint firstItem="SmX-u5-x6L" firstAttribute="centerY" secondItem="EmV-Wc-mNq" secondAttribute="centerY" constant="-5" id="DYp-X8-oUX"/>
+                                    <constraint firstItem="SmX-u5-x6L" firstAttribute="centerX" secondItem="EmV-Wc-mNq" secondAttribute="centerX" id="IlK-R3-4ap"/>
+                                    <constraint firstAttribute="height" constant="44" id="ugc-sc-una"/>
+                                </constraints>
+                            </view>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Car-fp-P5S">
+                                <rect key="frame" x="0.0" y="88" width="414" height="5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="5" id="2dA-R0-YgA"/>
+                                </constraints>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BQc-sL-9hJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4KS-A9-0Yz"/>
+                            <constraint firstItem="Car-fp-P5S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6SG-Cu-M3s"/>
+                            <constraint firstItem="Car-fp-P5S" firstAttribute="width" secondItem="EmV-Wc-mNq" secondAttribute="width" id="Cxz-M6-cbR"/>
+                            <constraint firstItem="QoC-Oa-QjU" firstAttribute="width" secondItem="EmV-Wc-mNq" secondAttribute="width" id="KlR-Mx-MXY"/>
+                            <constraint firstItem="QoC-Oa-QjU" firstAttribute="top" secondItem="BQc-sL-9hJ" secondAttribute="bottom" id="Q3r-x2-MeG"/>
+                            <constraint firstItem="BQc-sL-9hJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QkG-4C-4hf"/>
+                            <constraint firstItem="BQc-sL-9hJ" firstAttribute="top" secondItem="Car-fp-P5S" secondAttribute="bottom" id="TFU-P4-Xne"/>
+                            <constraint firstItem="EmV-Wc-mNq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xoo-DN-0NQ"/>
+                            <constraint firstItem="BQc-sL-9hJ" firstAttribute="width" secondItem="EmV-Wc-mNq" secondAttribute="width" id="cO9-Am-wPA"/>
+                            <constraint firstItem="EmV-Wc-mNq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dmJ-Y5-hUt"/>
+                            <constraint firstItem="Car-fp-P5S" firstAttribute="top" secondItem="EmV-Wc-mNq" secondAttribute="bottom" id="lSv-8f-ZTq"/>
+                            <constraint firstItem="EmV-Wc-mNq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pLa-2B-wEs"/>
+                            <constraint firstItem="QoC-Oa-QjU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qwD-0v-y3Q"/>
+                            <constraint firstItem="EmV-Wc-mNq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="siQ-Zi-6Bh"/>
+                            <constraint firstItem="EmV-Wc-mNq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zmK-Ui-LlG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="ste-yH-Z08" id="Sa0-ol-vIO"/>
+                        <outlet property="barView" destination="EmV-Wc-mNq" id="c7b-kl-Sun"/>
+                        <outlet property="forwardButton" destination="WCb-5T-2BP" id="sjF-gh-wlG"/>
+                        <outlet property="progressBar" destination="Car-fp-P5S" id="YwO-jf-S8d"/>
+                        <outlet property="reloadButton" destination="xXy-pT-7Vf" id="JWp-Nl-bu8"/>
+                        <outlet property="urlField" destination="SmX-u5-x6L" id="qFA-NP-XJa"/>
+                        <outlet property="webView" destination="BQc-sL-9hJ" id="46E-KJ-zH9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
+        </scene>
+    </scenes>
+</document>
