@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xsE-xs-APd">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="TpX-By-wIc">
+            <objects>
+                <navigationController id="xsE-xs-APd" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fCH-Ra-Q38">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="YHH-gq-I7G" kind="relationship" relationship="rootViewController" id="4VR-uC-eaA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gIX-6f-yKt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-851" y="294"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="98O-6M-miS">
+            <objects>
+                <viewController id="YHH-gq-I7G" customClass="ViewController" customModule="FFHitList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IfW-ad-h6O">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1XP-df-Ixf">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="vR4-AD-FKS">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vR4-AD-FKS" id="wln-hN-ibt">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="YHH-gq-I7G" id="h3V-xG-Ndj"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Kba-r4-Bpa" firstAttribute="trailing" secondItem="1XP-df-Ixf" secondAttribute="trailing" id="02U-kp-1pQ"/>
+                            <constraint firstItem="1XP-df-Ixf" firstAttribute="top" secondItem="Kba-r4-Bpa" secondAttribute="top" id="JUr-v0-b2x"/>
+                            <constraint firstItem="Kba-r4-Bpa" firstAttribute="bottom" secondItem="1XP-df-Ixf" secondAttribute="bottom" id="O6u-rW-Hs4"/>
+                            <constraint firstItem="1XP-df-Ixf" firstAttribute="leading" secondItem="Kba-r4-Bpa" secondAttribute="leading" id="cNC-sg-ivc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kba-r4-Bpa"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="r3p-tE-knJ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Phm-4T-aTf">
+                            <connections>
+                                <action selector="addName:" destination="YHH-gq-I7G" id="Fzn-Ao-BIf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="1XP-df-Ixf" id="zfY-sc-dqs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wYK-tY-eOS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-25" y="294"/>
+        </scene>
+    </scenes>
+</document>
