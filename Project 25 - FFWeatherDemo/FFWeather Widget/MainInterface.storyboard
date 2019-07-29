@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="6Tr-Yr-v9U">
+            <objects>
+                <viewController id="Rhx-Ik-h6s" customClass="TodayViewController" customModule="Weather_Widget" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o7N-Uc-Fl6"/>
+                        <viewControllerLayoutGuide type="bottom" id="695-TI-6jM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="2CP-rq-E6H">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="upi-2J-sCS">
+                                <rect key="frame" x="16" y="8.5" width="30.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temp" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="Xda-rR-SK0">
+                                <rect key="frame" x="246.5" y="8.5" width="42.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="dZq-br-tm9">
+                                <rect key="frame" x="162" y="8.5" width="64.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="upi-2J-sCS" secondAttribute="leading" id="Eye-IV-Vcv"/>
+                            <constraint firstItem="upi-2J-sCS" firstAttribute="centerY" secondItem="2CP-rq-E6H" secondAttribute="centerY" id="P09-iy-yXX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xda-rR-SK0" secondAttribute="trailing" constant="15" id="oVm-J3-bPe"/>
+                            <constraint firstItem="Xda-rR-SK0" firstAttribute="centerY" secondItem="2CP-rq-E6H" secondAttribute="centerY" id="rBf-pq-vc1"/>
+                            <constraint firstItem="dZq-br-tm9" firstAttribute="centerY" secondItem="2CP-rq-E6H" secondAttribute="centerY" id="sgJ-Sz-EPi"/>
+                            <constraint firstItem="Xda-rR-SK0" firstAttribute="leading" secondItem="dZq-br-tm9" secondAttribute="trailing" constant="20" id="uCL-0z-rYT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pEQ-Xj-v3S"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="37"/>
+                    <connections>
+                        <outlet property="cityLabel" destination="upi-2J-sCS" id="FsN-sJ-hjq"/>
+                        <outlet property="tempLabel" destination="Xda-rR-SK0" id="nED-3g-Gb8"/>
+                        <outlet property="weatherLabel" destination="dZq-br-tm9" id="52Q-D0-Sjv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gM1-ZZ-eG2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="747.82608695652175" y="190.51339285714286"/>
+        </scene>
+    </scenes>
+</document>
