@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FFSceneDetector" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FIL-58-lFT">
+                                <rect key="frame" x="0.0" y="59" width="414" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="V9g-it-4qc"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Vtt-CM-N0V">
+                                <rect key="frame" x="0.0" y="339" width="414" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KeA-tV-vVs">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Fgb-O7-Chh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R1p-Hu-Rv1">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <state key="normal" title="Picker anther image"/>
+                                        <connections>
+                                            <action selector="pickerImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lvn-uk-SyX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="KeA-tV-vVs" secondAttribute="trailing" id="FxC-Fu-S7M"/>
+                                    <constraint firstItem="KeA-tV-vVs" firstAttribute="top" secondItem="Vtt-CM-N0V" secondAttribute="top" id="H9j-lB-WR3"/>
+                                    <constraint firstItem="R1p-Hu-Rv1" firstAttribute="leading" secondItem="Vtt-CM-N0V" secondAttribute="leading" id="M5e-NU-ZvM"/>
+                                    <constraint firstAttribute="height" constant="100" id="N2W-Pz-zKe"/>
+                                    <constraint firstItem="KeA-tV-vVs" firstAttribute="leading" secondItem="Vtt-CM-N0V" secondAttribute="leading" id="Wya-Ps-cGR"/>
+                                    <constraint firstAttribute="trailing" secondItem="R1p-Hu-Rv1" secondAttribute="trailing" id="ft2-Ac-DR9"/>
+                                    <constraint firstItem="R1p-Hu-Rv1" firstAttribute="top" secondItem="KeA-tV-vVs" secondAttribute="bottom" id="uNd-Fv-zkt"/>
+                                    <constraint firstAttribute="bottom" secondItem="R1p-Hu-Rv1" secondAttribute="bottom" id="yZR-Dk-hx6"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vtt-CM-N0V" secondAttribute="trailing" id="4et-Vp-uBC"/>
+                            <constraint firstItem="Vtt-CM-N0V" firstAttribute="top" secondItem="FIL-58-lFT" secondAttribute="bottom" constant="30" id="Q72-2K-q2F"/>
+                            <constraint firstItem="FIL-58-lFT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WyI-TP-l6w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FIL-58-lFT" secondAttribute="trailing" id="bO9-a2-puk"/>
+                            <constraint firstItem="FIL-58-lFT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="mcf-Ci-DQh"/>
+                            <constraint firstItem="Vtt-CM-N0V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="y4J-Ka-Rvj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="KeA-tV-vVs" id="UuQ-Mg-4rS"/>
+                        <outlet property="scene" destination="FIL-58-lFT" id="3PY-v5-lRl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
