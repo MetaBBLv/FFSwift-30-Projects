@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FFNotificationsUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift Reminder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ejv-o4-hvD">
+                                <rect key="frame" x="0.0" y="74" width="414" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A handy app to remind you to do your Swift Coding!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AcL-wU-Puq">
+                                <rect key="frame" x="0.0" y="125" width="414" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Nrt-Al-lpu">
+                                <rect key="frame" x="0.0" y="647" width="414" height="185"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="185" id="vmh-Dd-WKc"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="586158905.83109403">
+                                    <!--2019-07-30 05:55:05 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="dataPickerDidSelectNoData:" destination="BYZ-38-t0r" eventType="valueChanged" id="7HL-yH-8x5"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We will remind you at:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVj-9p-VAV">
+                                <rect key="frame" x="123.5" y="606" width="167" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Nrt-Al-lpu" firstAttribute="top" secondItem="yVj-9p-VAV" secondAttribute="bottom" constant="20" id="0dL-aE-rVi"/>
+                            <constraint firstItem="Nrt-Al-lpu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7zv-em-VT8"/>
+                            <constraint firstItem="AcL-wU-Puq" firstAttribute="top" secondItem="Ejv-o4-hvD" secondAttribute="bottom" constant="15" id="8kB-3a-VrV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ejv-o4-hvD" secondAttribute="trailing" id="OM1-Ri-6pR"/>
+                            <constraint firstItem="Ejv-o4-hvD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="R4M-Yw-QOV"/>
+                            <constraint firstItem="Ejv-o4-hvD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Szg-ER-ah5"/>
+                            <constraint firstItem="AcL-wU-Puq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TtK-id-gXI"/>
+                            <constraint firstItem="AcL-wU-Puq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Wy6-Gk-EZv"/>
+                            <constraint firstItem="Nrt-Al-lpu" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="g4X-Pv-cNG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Nrt-Al-lpu" secondAttribute="bottom" constant="30" id="sV1-UT-9dd"/>
+                            <constraint firstItem="yVj-9p-VAV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sdc-nF-MqO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
+        </scene>
+    </scenes>
+</document>
